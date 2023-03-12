@@ -1,0 +1,77 @@
+:root {
+  --lightest_green: #cad2c5;
+  --light_green: #84a98c;
+  --normal_green: #52796f;
+  --dark_green: #354f52;
+  --darkest_green: #2f3e46;
+  --black_green: #000e14;
+  --yellow: #fdbe39;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: serif;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  align-items: center;
+  background-color: var(--black_green);
+}
+.container {
+  display: flex;
+}
+.card {
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+}
+img {
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.intro {
+  height: 80px;
+  width: 350px;
+  padding: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 170px;
+  background: rgb(27, 27, 27, 0.5);
+  color: white;
+  transition: 0.5s;
+}
+h1 {
+  margin: 10px;
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+span {
+  font-weight: bold;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card:hover .intro {
+  height: 240px;
+  bottom: 170px;
+  background: black;
+}
+.card:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover img {
+  transform: scale(1.1);
+}

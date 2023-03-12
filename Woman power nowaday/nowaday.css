@@ -1,0 +1,83 @@
+:root {
+  --lightest_green: #cad2c5;
+  --light_green: #84a98c;
+  --normal_green: #52796f;
+  --dark_green: #354f52;
+  --darkest_green: #2f3e46;
+  --black_green: #000e14;
+  --yellow: #fdbe39;
+}
+/* .bgpic{
+    opacity:0;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 50px;
+  background-color: var(--black_green);
+  padding: 0px 400px 0 200px;
+  background-image: url(./woman.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  margin-bottom: 200px;
+}
+h1 {
+  color: #cad2c5;
+  font-size: 70px;
+  letter-spacing: normal;
+  margin: auto;
+}
+p {
+  margin-top: 15px;
+  font-size: 19px;
+  color: var(--lightest_green);
+  font-weight: 100;
+}
+.content {
+  margin-top: 40px;
+}
+#authors {
+  font-weight: bolder;
+}
+img {
+  width: 90%;
+  height: 90%;
+  padding: 0;
+}
+.picture {
+  transition: 1s;
+}
+.picture:hover {
+  transform: scale(1.3);
+  z-index: 2;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+.stat {
+  border-style: none;
+  border-color: azure;
+  width: 250px;
+  margin: 70px 30px 70px 0;
+  text-align: center;
+  padding: 20px 20px;
+  background-color: #cad2c5;
+  height: max-content;
+  border-radius: 40px;
+}
+.stat span {
+  color: #000e14;
+}
+.stat p {
+  color: #000e14;
+  font-weight: bolder;
+  font-size: 20px;
+}
+p:hover {
+  color: white;
+}
